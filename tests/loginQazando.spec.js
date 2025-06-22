@@ -22,6 +22,19 @@ test('Login válido', async ({ page }) => {
     await page.waitForTimeout(5000)
 })
 
+test('Login sem preencher campos', async ({ page }) => {
+    const loginPage = new LoginPage(page)
+
+    await loginPage.acessarAplicação()
+
+    await loginPage.preencherCampos('', '')
+    await loginPage.clicarBotaoLogin()
+    
+    await loginPage.validarError('E-mail inválido.')
+
+    await page.waitForTimeout(5000)
+})
+
 test('Login sem preencher campo Email', async ({ page }) => {
     const loginPage = new LoginPage(page)
 
