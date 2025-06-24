@@ -1,9 +1,9 @@
 // @ts-check - spech
 import { test, expect } from '@playwright/test'
 import { log } from 'console';
-const { faker } = require('@faker-js/faker')
 const { LoginPage } = require('../pages/LoginPage')
 const { MinhaContaPage } = require('../pages/MinhaContaPage')
+const { faker } = require('@faker-js/faker')
 
 let loginPage
 let minhaContaPage
