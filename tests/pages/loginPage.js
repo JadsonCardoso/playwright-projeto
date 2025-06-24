@@ -1,11 +1,12 @@
-import { test, expect } from '@playwright/test';
+const { expect } = require('@playwright/test')
+
 export class LoginPage {
 
     constructor(page) {
         this.page = page
     }
 
-async acessarAplicação() {
+async acessarLogin() {
     await this.page.goto('https://automationpratice.com.br/login');
     await expect(this.page.locator('#btnLogin')).toHaveText('login')
 }
@@ -23,8 +24,5 @@ async validarError(mensagemError) {
     await expect(this.page.locator('//span[@class="invalid_input"]')).toHaveText(mensagemError)
 }
 
-async validarSucesso(mensagemSucesso, validarEmail) {
-    await expect(this.page.locator('#swal2-title')).toHaveText(mensagemSucesso)
-    await expect(this.page.locator('#swal2-html-container')).toHaveText(validarEmail)
-}
+// Criar funções para logout
 }
