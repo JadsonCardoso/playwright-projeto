@@ -1,9 +1,9 @@
 // @ts-check - spech
 
-const { test, expect } = require('@playwright/test') // Importando o modulo '@playwright/test' e expect, e passando para a função 'test'
-const { CadastroPage } = require('../pages/CadastroPage')
-const { MinhaContaPage } = require('../pages/MinhaContaPage')
-const { faker } = require('@faker-js/faker');
+import { test, expect } from '@playwright/test'  // Importando o modulo '@playwright/test' e expect, e passando para a função 'test'
+import { CadastroPage } from '../pages/CadastroPage'
+import { MinhaContaPage } from '../pages/MinhaContaPage'
+import { faker } from '@faker-js/faker'
 
 let cadastroPage
 let minhaContaPage
