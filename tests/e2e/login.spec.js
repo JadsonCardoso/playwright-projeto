@@ -17,12 +17,11 @@ test('Acessar Aplicação', async ({ page }) => {
 })
 
 test('Login válido', async ({ page }) => {
-    const userName = faker.person.fullName(); // Nome aleatório
     const userEmail = faker.internet.email(); // Email Aleatório
 
     await loginPage.acessarLogin()
 
-    await loginPage.preencherCampos(userEmail, userName)
+    await loginPage.preencherCampos(userEmail, '123654')
     await loginPage.clicarBotaoLogin()
 
     await minhaContaPage.validarSucesso('Login realizado', `Olá, ${userEmail}`)
