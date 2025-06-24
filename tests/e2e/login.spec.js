@@ -1,6 +1,6 @@
 // @ts-check - spech
 import { test, expect } from '@playwright/test' // Importando o modulo '@playwright/test' e expect, e passando para a função 'test'
-import { LoginPage } from '../pages/LoginPage.js'
+import { LoginPage } from '../pages/loginPage.js'
 import { MinhaContaPage } from '../pages/MinhaContaPage.js'
 import { faker } from '@faker-js/faker'
 
