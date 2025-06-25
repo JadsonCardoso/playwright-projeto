@@ -1,7 +1,4 @@
-import { test, expect } from '@playwright/test'
-import { MinhaContaPage } from '../pages/MinhaContaPage.js'
-import {LoginPage} from '../pages/loginPage.js'
-
+import { test, expect } from '../support/index.js' // Importando o modulo o index
 
 
 test('', async ({ page }) => {
