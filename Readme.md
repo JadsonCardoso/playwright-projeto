@@ -1,5 +1,3 @@
-![poster](https://github.com/JadsonCardoso/playwright-projetomain/logo.jfif)
-
 # Projeto de Testes Automatizados com Playwright
 Este projeto utiliza o [Playwright](https://playwright.dev/) para automação de testes end-to-end em aplicações web. Ele foi desenvolvido com o objetivo de garantir a qualidade e estabilidade da aplicação através de testes robustos, rápidos e confiáveis.
 
