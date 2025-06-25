@@ -5,7 +5,7 @@ Este projeto utiliza o [Playwright](https://playwright.dev/) para automação de
 
 ```
 - e2e/                  # Casos de teste organizados por grupos funcionais
-- actions/              # Actions (métodos reutilizáveis)
+- pages/                # Pages Objects (métodos reutilizáveis)
 - index.js/             # Configurações (credenciais, visual, contextos)
 - fixtures/             # JSON, Imagens, etc (para massa de testes)
 - utils/                # Utilitários e helpers reutilizáveis
