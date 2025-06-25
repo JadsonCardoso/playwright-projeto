@@ -24,7 +24,4 @@ export class CadastroPage {
         await this.page.locator('#btnRegister').click()
     }
 
-    async validarMensagemError(texto) {
-        await expect(this.page.locator('.errorLabel')).toHaveText(texto)
-    }
 } 
